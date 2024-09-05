@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 
 describe("Login Functionality", () => {
   it("Login test using Conduit", () => {
