@@ -53,5 +53,7 @@ describe("Dropdown Functionality", () => {
     cy.get(
       '[class="mbsc-popup-overlay mbsc-popup-overlay-anchored mbsc-ios"]'
     ).click({ force: true });
+
+    cy.get("#demo-search-hits").click({ force: true });
   });
 });
