@@ -9,6 +9,6 @@ describe("Advanced UI Elements", () => {
     cy.go(-1); // 一樣是回瀏覽器的"上一頁"
     cy.go(1); // 一樣是回瀏覽器的"下一頁"
     cy.get('input[type="email"]').type("jcjchuhu2@gmail.com");
-    cy.reload();
+    cy.reload(); // 瀏覽器的"重新整理"
   });
 });
