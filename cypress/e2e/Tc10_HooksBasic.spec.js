@@ -5,6 +5,8 @@
 // 3. Before Each
 // 4. After Each
 
+// 重要: 使用這幾種 hooks 時，最好使用 傳統函式，不要使用箭頭函式
+
 describe("Hooks Basics", () => {
   before(() => {
     cy.log("Before block");
