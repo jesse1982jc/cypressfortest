@@ -17,6 +17,7 @@
     "cypress": "^13.14.1",
     "cypress-iframe": "^1.0.1",
     "cypress-xpath": "^2.0.1",
+    "neat-csv": "^5.2.0",
     "xlsx": "^0.18.5"
   }
 }
