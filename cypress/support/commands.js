@@ -11,6 +11,16 @@
 //
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
+
+// ===== 自訂的 Commands =====
+// 登入 conduit 網站的步驟，輸入 email, password，並點擊登入按鈕的步驟
+Cypress.Commands.add("conduitLogin", (email, password) => {
+  cy.visit("https://react-redux.realworld.io/");
+  cy.get('a[href="#login"]').click();
+  cy.get('input[placeholder="Email"]').type(email);
+  cy.get('input[placeholder="Password"]').type(password);
+  cy.get('button[type="submit"]').click();
+});
 //
 //
 // -- This is a child command --
