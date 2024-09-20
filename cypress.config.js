@@ -3,6 +3,12 @@ const { defineConfig } = require("cypress");
 // const plugins = require("./cypress/plugins");
 
 module.exports = defineConfig({
+  // 執行失敗時截圖→改為不要截圖
+  screenshotOnRunFailure: false,
+
+  // 影片錄製→改不要錄製影片
+  video: false,
+
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
@@ -10,7 +16,8 @@ module.exports = defineConfig({
     },
 
     specPattern: "cypress/e2e/**/*.spec.{js,jsx,ts,tsx}",
-  },
 
-  video: true,
+    // 加入 baseURL，記得要加在 e2e 裡面，不能加在外層
+    baseUrl: "https://google.com",
+  },
 });

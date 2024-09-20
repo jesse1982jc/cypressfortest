@@ -1,9 +1,19 @@
 /// <reference types="cypress" />
 
+// 只改變此測項的配置
+// 改變 baseUrl 的網址，即使我在 cypress.config.js 是寫 google.com，還是會以這裡的網址為主
+Cypress.config("baseUrl", "https://react-redux.realworld.io/");
+
+// 即使我在 cypress.config.js 是設定 false，還是以這裡為主，會變 true
+Cypress.config("screenshotOnRunFailure", true);
+
+// 即使我在 cypress.config.js 是設定 false，還是以這裡為主，會變 true
+// Cypress.config("video", true);
+
 describe("Login Functionality", () => {
   it("Login test using Conduit", () => {
     // 1. 先進到測試頁
-    cy.visit("https://react-redux.realworld.io/");
+    cy.visit("/");
 
     // cy.contains("a", "Sign in").click();
 

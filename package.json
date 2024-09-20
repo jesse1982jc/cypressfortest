@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "open": "cypress open",
-    "test-electron": "cypress run",
+    "test-electron": "cypress run --spec \"cypress/e2e/Tc01_FirstScript.spec.js\"",
     "smoke-test": "cypress run --spec \"cypress/e2e/smokeTest/*.spec.js\"",
     "test-electron-headed": "cypress run --headed",
     "test-chrome": "cypress run --browser chrome",
