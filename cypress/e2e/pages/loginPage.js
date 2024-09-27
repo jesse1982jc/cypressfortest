@@ -21,7 +21,7 @@ class LoginPage {
 
   // 輸入 Password 的方法
   enterPassword(passwordValue) {
-    cy.get(this.enterPassword()).type(passwordValue);
+    cy.get(this.getPassword()).type(passwordValue);
   }
 
   // 點擊 Sign in 按鈕 的方法
