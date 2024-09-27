@@ -18,6 +18,7 @@ module.exports = defineConfig({
     specPattern: "cypress/e2e/**/*.spec.{js,jsx,ts,tsx}",
 
     // 加入 baseURL，記得要加在 e2e 裡面，不能加在外層
-    baseUrl: "https://google.com",
+    // baseUrl: "https://google.com",
+    baseUrl: "https://react-redux.realworld.io/",
   },
 });

@@ -20,10 +20,10 @@ describe("Custom Command test", () => {
 
     // 這不是登入的步驟，所以不要寫進 commands.js 裡面
     // 錯誤的(測試用)
-    cy.get('a[href="#cypress"]').click();
+    // cy.get('a[href="#cypress"]').click();
 
     // 正確的
-    // cy.get('a[href="#settings"]').click();
+    cy.get('a[href="#settings"]').click();
 
     cy.get('button[class="btn btn-outline-danger"]').click();
   });
