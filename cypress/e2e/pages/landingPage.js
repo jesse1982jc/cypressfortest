@@ -1,5 +1,8 @@
-// 建立一個類別 class
-class LandingPage {
+// 匯入 BasePage 類別
+import BasePage from "./basePage";
+
+// 建立一個類別 class 叫 LandingPage，並且它繼承自 BasePage 這個類別
+class LandingPage extends BasePage {
   // 找到 Sign in 的選擇器 的方法 (直接返回字串)
   getSignin() {
     return "Sign in";
@@ -7,7 +10,10 @@ class LandingPage {
 
   // 點擊 Sign in 按鈕 的方法(找到選擇器，並點擊)
   clickSigninButton() {
-    cy.contains(this.getSignin()).click();
+    // cy.contains(this.getSignin()).click();
+
+    // 改用 BasePage 的方法
+    this.clickElement(this.getSignin(), true);
   }
 }
 

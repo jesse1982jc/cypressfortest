@@ -1,4 +1,8 @@
-class HomePage {
+// 匯入 BasePage 類別
+import BasePage from "./basePage";
+
+// HomePage 將繼承自 BasePage
+class HomePage extends BasePage {
   // 找到 Your feed 選擇器 的方法
   getYourFeed() {
     return "Your Feed";
@@ -26,27 +30,42 @@ class HomePage {
 
   // 確認 YourFeed 是否存在 的方法
   checkYourFeedIsVisible() {
-    cy.contains(this.getYourFeed()).should("be.visible");
+    // cy.contains(this.getYourFeed()).should("be.visible");
+
+    // 改用 BasePage 的方法
+    this.isElementVisible(this.getYourFeed(), true);
   }
 
   // 確認 GlobalFeed 是否存在 的方法
   checkGlobalFeedIsVisible() {
-    cy.contains(this.getGlobalFeed()).should("be.visible");
+    // cy.contains(this.getGlobalFeed()).should("be.visible");
+
+    // 改用 BasePage 的方法
+    this.isElementVisible(this.getGlobalFeed(), true);
   }
 
   // 確認 Home 是否存在 的方法
   checkHomeIsVisible() {
-    cy.contains(this.getHome()).should("be.visible");
+    // cy.contains(this.getHome()).should("be.visible");
+
+    // 改用 BasePage 的方法
+    this.isElementVisible(this.getHome(), true);
   }
 
   // 確認 New Post 是否存在 的方法
   checkNewPostIsVisible() {
-    cy.get(this.getNewPost()).should("be.visible");
+    // cy.get(this.getNewPost()).should("be.visible");
+
+    // 改用 BasePage 的方法
+    this.isElementVisible(this.getNewPost(), false);
   }
 
   // 點擊 Settings 按鈕動作 的方法
   clickSettings() {
-    cy.get(this.getSettings()).click();
+    // cy.get(this.getSettings()).click();
+
+    // 改用 BasePage 的方法
+    this.clickElement(this.getSettings(), false);
   }
 }
 
