@@ -70,4 +70,11 @@ class HomePage extends BasePage {
 }
 
 // 導出 HomePage 類別
-export default HomePage;
+// export default HomePage;
+
+// 另一種寫法，導出 HomePage 類別的"實例"
+// 先創建 HomePage 的實例，並給它命名為 homePage
+const homePage = new HomePage();
+
+// 導出 homePage 實例
+export default homePage;

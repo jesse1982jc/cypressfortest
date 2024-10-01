@@ -18,4 +18,8 @@ class SettingsPage extends BasePage {
 }
 
 // 導出 SettingsPage 類別
-export default SettingsPage;
+// export default SettingsPage;
+
+// 另一種寫法，創建 SettingsPage 類別的實例，並取名為 settingsPage，然後導出 settingsPage 實例
+const settingsPage = new SettingsPage();
+export default settingsPage;

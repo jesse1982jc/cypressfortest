@@ -47,4 +47,8 @@ class LoginPage extends BasePage {
 }
 
 // 導出 LoginPage 類別
-export default LoginPage;
+// export default LoginPage;
+
+// 另一種寫法，創建 LoginPage 類別的實例，並取名為 loginPage，然後導出 loginPage 實例
+const loginPage = new LoginPage();
+export default loginPage;

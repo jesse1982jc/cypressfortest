@@ -19,4 +19,8 @@ class LandingPage extends BasePage {
 
 // 備註: export default new LoginPage(); 這種方式導出的是 LoginPage 類的一個"實例"。
 // 導出 LandingPage 類別
-export default LandingPage;
+// export default LandingPage;
+
+// 另一種寫法，創建 LandingPage 類別的實例，並取名為 landingPage，然後導出 landingPage 實例
+const landingPage = new LandingPage();
+export default landingPage;
