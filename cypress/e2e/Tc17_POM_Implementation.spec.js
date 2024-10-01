@@ -1,8 +1,12 @@
 // 另一種作法: 因為來源是導出"實例"，所以這裡改成匯入"實例"
 import landingPage from "./pages/landingPage";
-import loginPage from "./pages/loginPage";
-import homePage from "./pages/homePage";
-import settingsPage from "./pages/settingsPage";
+
+// ** method chaining 作法 **
+// 因為從 landingPage.js 就一一導入了(第一個遇到的頁面實例)，所以 以下三行導入就不需要了
+// import loginPage from "./pages/loginPage";
+// import homePage from "./pages/homePage";
+// import settingsPage from "./pages/settingsPage";
+
 // 也可以寫成 import SettingsPage from "../e2e/pages/settingsPage";
 
 describe("Page Object Model Test", () => {
@@ -25,27 +29,30 @@ describe("Page Object Model Test", () => {
     cy.visit("https://react-redux.realworld.io/");
 
     // Landing page 點擊 Sign in 按鈕
-    landingPage.clickSigninButton();
+    // ** method chaining 作法 **
+    // 注意: 以下改寫成 method chaining 的寫法，因為用 . 串接，所以後面會少 分號 ;
+    landingPage
+      .clickSigninButton()
 
-    // Login page 輸入 Email
-    loginPage.enterEmail(this.data.validEmail);
+      // Login page 輸入 Email
+      .enterEmail(this.data.validEmail)
 
-    // Login page 輸入 Password
-    loginPage.enterPassword(this.data.validPassword);
+      // Login page 輸入 Password
+      .enterPassword(this.data.validPassword)
 
-    // Login page 點擊 Sign in 按鈕
-    loginPage.clickSignin();
+      // Login page 點擊 Sign in 按鈕
+      .clickSignin()
 
-    // Home page 確認 YourFeed, GlobalFeed, Home, New Post 是否存在
-    homePage.checkYourFeedIsVisible();
-    homePage.checkGlobalFeedIsVisible();
-    homePage.checkHomeIsVisible();
-    homePage.checkNewPostIsVisible();
+      // Home page 確認 YourFeed, GlobalFeed, Home, New Post 是否存在
+      .checkYourFeedIsVisible()
+      .checkGlobalFeedIsVisible()
+      .checkHomeIsVisible()
+      .checkNewPostIsVisible()
 
-    // Home page 點擊 Settings 按鈕
-    homePage.clickSettings();
+      // Home page 點擊 Settings 按鈕
+      .clickSettings()
 
-    // Settings page 點擊 Logout 按鈕
-    settingsPage.clickLogout();
+      // Settings page 點擊 Logout 按鈕
+      .clickLogout();
   });
 });

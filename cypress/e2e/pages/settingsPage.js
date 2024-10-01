@@ -1,6 +1,10 @@
 // 匯入 BasePage 類別
 import BasePage from "./basePage";
 
+// ** method chaining 作法 **
+// 注意: 這邊是匯入 landingPage 實例本身，不是類別名稱，因為在 landingPage.js 最後一行是匯出 landingPage 實例了
+import landingPage from "./landingPage";
+
 // 新建 SettingsPage 類別，並繼承自 BasePage 類別
 class SettingsPage extends BasePage {
   // 找到 logout 登出的選擇器 的方法
@@ -14,6 +18,10 @@ class SettingsPage extends BasePage {
 
     // 改用 BasePage 的方法
     this.clickElement(this.getLogout(), true);
+
+    // ** method chaining 作法 **
+    // 返回到 landingPage 實例 這個頁面
+    return landingPage;
   }
 }
 

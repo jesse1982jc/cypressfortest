@@ -1,6 +1,10 @@
 // 匯入 BasePage 類別
 import BasePage from "./basePage";
 
+// ** method chaining 作法 **
+// 注意: 這邊是匯入 loginPage 實例本身，不是類別名稱，因為在 loginPage.js 最後一行是匯出 loginPage 實例了
+import loginPage from "./loginPage";
+
 // 建立一個類別 class 叫 LandingPage，並且它繼承自 BasePage 這個類別
 class LandingPage extends BasePage {
   // 找到 Sign in 的選擇器 的方法 (直接返回字串)
@@ -14,6 +18,10 @@ class LandingPage extends BasePage {
 
     // 改用 BasePage 的方法
     this.clickElement(this.getSignin(), true);
+
+    // ** method chaining 作法 **
+    // 返回到 loginPage 實例 這個頁面
+    return loginPage;
   }
 }
 
