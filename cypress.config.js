@@ -3,6 +3,20 @@ const { defineConfig } = require("cypress");
 // const plugins = require("./cypress/plugins");
 
 module.exports = defineConfig({
+  // cypress cloud 的 唯一 id
+  projectId: "e7pfkt",
+  reporter: "cypress-multi-reporters",
+  reporterOptions: {
+    reporterEnabled: "mochawesome",
+    mochawesomeReporterOptions: {
+      reportDir: "cypress/reports/mocha",
+      quiet: true,
+      overwrite: false,
+      html: false,
+      json: true,
+    },
+  },
+
   // 執行失敗時截圖→改為不要截圖
   screenshotOnRunFailure: false,
 

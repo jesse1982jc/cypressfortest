@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-14T07:09:03.819Z",
+    "end": "2024-10-14T07:09:07.099Z",
+    "duration": 3280,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8166c96a-666f-4c93-8e69-192cc2be0af7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\smoke\\Tc03_CheckBox.spec.js",
+      "file": "cypress\\e2e\\smoke\\Tc03_CheckBox.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "11491ccc-0cd3-4dec-b10c-f08cf9505ee1",
+          "title": "Checkbox Functionality",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Handliing diffenent Check boxes",
+              "fullTitle": "Checkbox Functionality Handliing diffenent Check boxes",
+              "timedOut": null,
+              "duration": 1898,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// 1. 先進到測試頁\ncy.visit(\"https://demos.jquerymobile.com/1.4.5/checkboxradio-checkbox/\");\n// 2. 抓到核取方塊的元素，先斷言該元素是\"未勾選\"的狀態，然後點擊它，再斷言它是\"已勾選\"的狀態\ncy.get(\"#checkbox-v-2a\").should(\"not.be.checked\").check({\n  force: true\n}).should(\"be.checked\");\n// 3. 抓到核取方塊的元素，先斷言該元素是\"未勾選\"的狀態，然後點擊它，再斷言它是\"已勾選\"的狀態\ncy.get(\"#checkbox-v-2c\").should(\"not.be.checked\").check({\n  force: true\n}).should(\"be.checked\");",
+              "err": {},
+              "uuid": "03cfc5ed-21cf-4fdf-a95f-dbea3d90be2e",
+              "parentUUID": "11491ccc-0cd3-4dec-b10c-f08cf9505ee1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "03cfc5ed-21cf-4fdf-a95f-dbea3d90be2e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1898,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
