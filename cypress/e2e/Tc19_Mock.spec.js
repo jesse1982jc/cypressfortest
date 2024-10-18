@@ -39,12 +39,14 @@ describe("Mock Testing", () => {
 
   it("Login User Mock", () => {
     cy.intercept("POST", "/api/users/login", { fixture: "Login.json" });
+    cy.wait(1000);
     cy.get(".nav-item .nav-link").eq(3).should("be.visible");
     cy.get(".nav-item .nav-link").eq(3).should("contain", "jcjchuhu2-ForTest");
   });
 
   xit("User Mock", () => {
     cy.intercept("GET", "/api/user", { fixture: "User.json" });
+    cy.wait(2000);
     cy.get("a.nav-link").eq(3).should("be.visible");
     cy.get("a.nav-link").eq(3).should("contain", "jesshaohao");
   });
