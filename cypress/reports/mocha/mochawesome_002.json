@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2024-10-14T07:09:03.819Z",
-    "end": "2024-10-14T07:09:07.099Z",
-    "duration": 3280,
+    "start": "2024-10-14T07:51:57.411Z",
+    "end": "2024-10-14T07:52:00.926Z",
+    "duration": 3515,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8166c96a-666f-4c93-8e69-192cc2be0af7",
+      "uuid": "d4316925-e5f0-4070-8b1d-e0ecbb482448",
       "title": "",
       "fullFile": "cypress\\e2e\\smoke\\Tc03_CheckBox.spec.js",
       "file": "cypress\\e2e\\smoke\\Tc03_CheckBox.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "11491ccc-0cd3-4dec-b10c-f08cf9505ee1",
+          "uuid": "0ed6afaa-d932-4295-9d50-0d62f8a638f1",
           "title": "Checkbox Functionality",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Handliing diffenent Check boxes",
               "fullTitle": "Checkbox Functionality Handliing diffenent Check boxes",
               "timedOut": null,
-              "duration": 1898,
+              "duration": 1866,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// 1. 先進到測試頁\ncy.visit(\"https://demos.jquerymobile.com/1.4.5/checkboxradio-checkbox/\");\n// 2. 抓到核取方塊的元素，先斷言該元素是\"未勾選\"的狀態，然後點擊它，再斷言它是\"已勾選\"的狀態\ncy.get(\"#checkbox-v-2a\").should(\"not.be.checked\").check({\n  force: true\n}).should(\"be.checked\");\n// 3. 抓到核取方塊的元素，先斷言該元素是\"未勾選\"的狀態，然後點擊它，再斷言它是\"已勾選\"的狀態\ncy.get(\"#checkbox-v-2c\").should(\"not.be.checked\").check({\n  force: true\n}).should(\"be.checked\");",
               "err": {},
-              "uuid": "03cfc5ed-21cf-4fdf-a95f-dbea3d90be2e",
-              "parentUUID": "11491ccc-0cd3-4dec-b10c-f08cf9505ee1",
+              "uuid": "df76869d-de7c-4024-bcba-cc86dee66e18",
+              "parentUUID": "0ed6afaa-d932-4295-9d50-0d62f8a638f1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "03cfc5ed-21cf-4fdf-a95f-dbea3d90be2e"
+            "df76869d-de7c-4024-bcba-cc86dee66e18"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1898,
+          "duration": 1866,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

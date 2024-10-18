@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2024-10-14T07:08:50.149Z",
-    "end": "2024-10-14T07:09:07.099Z",
-    "duration": 16950
+    "start": "2024-10-14T07:51:43.495Z",
+    "end": "2024-10-14T07:52:00.926Z",
+    "duration": 17431
   },
   "results": [
     {
-      "uuid": "3f050272-60ef-4c9a-9354-9ca39dc95297",
+      "uuid": "e3e8b16d-975e-4c4d-853e-25bf4a254ca5",
       "title": "",
       "fullFile": "cypress\\e2e\\smoke\\Tc02_RadioButton.spec.js",
       "file": "cypress\\e2e\\smoke\\Tc02_RadioButton.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d731278f-04a9-49c8-b534-d01b1a130955",
+          "uuid": "7da45063-a480-41ac-ba48-3d6e875e5a17",
           "title": "Radio Button Functionality",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "Handliing diffenent radio button",
               "fullTitle": "Radio Button Functionality Handliing diffenent radio button",
               "timedOut": null,
-              "duration": 6041,
+              "duration": 5981,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
-              "context": null,
+              "context": "\"asset/Tc02_RadioButton.spec.js/Radio Button Functionality -- Handliing diffenent radio button (failed).png\"",
               "code": "// 1. 先進到測試頁\ncy.visit(\"https://demos.jquerymobile.com/1.4.5/checkboxradio-radio/\");\n// Basic Radio Button\n// 先找到該元素，斷言該元素一開始是\"未點擊\"狀態，斷言成功的話，再點擊它\ncy.get(\"#radio-choice-0abs\").should(\"not.be.checked\").click({\n  force: true\n});\ncy.get(\"#radio-choice-0b\").should(\"not.be.checked\").click({\n  force: true\n});\n// Modern Radio Button\n// 先找到該元素，斷言該元素一開始是\"未點擊\"狀態，斷言成功的話，再點擊它\ncy.get(\"#radio-choice-h-2b\").should(\"not.be.checked\").click({\n  force: true\n});\ncy.get(\"#radio-choice-h-2c\").should(\"not.be.checked\").click({\n  force: true\n});",
               "err": {
                 "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#radio-choice-0abs`, but never found it.",
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#radio-choice-0abs`, but never found it.\n    at Context.eval (webpack://cypressfortest/./cypress/e2e/smoke/Tc02_RadioButton.spec.js:11:7)",
                 "diff": null
               },
-              "uuid": "e55f675d-210e-451e-ab89-902463fec545",
-              "parentUUID": "d731278f-04a9-49c8-b534-d01b1a130955",
+              "uuid": "be74ac3f-4464-44b5-86b3-1f5c316bc0ef",
+              "parentUUID": "7da45063-a480-41ac-ba48-3d6e875e5a17",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "e55f675d-210e-451e-ab89-902463fec545"
+            "be74ac3f-4464-44b5-86b3-1f5c316bc0ef"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 6041,
+          "duration": 5981,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -80,7 +80,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "8166c96a-666f-4c93-8e69-192cc2be0af7",
+      "uuid": "d4316925-e5f0-4070-8b1d-e0ecbb482448",
       "title": "",
       "fullFile": "cypress\\e2e\\smoke\\Tc03_CheckBox.spec.js",
       "file": "cypress\\e2e\\smoke\\Tc03_CheckBox.spec.js",
@@ -89,7 +89,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "11491ccc-0cd3-4dec-b10c-f08cf9505ee1",
+          "uuid": "0ed6afaa-d932-4295-9d50-0d62f8a638f1",
           "title": "Checkbox Functionality",
           "fullFile": "",
           "file": "",
@@ -100,7 +100,7 @@
               "title": "Handliing diffenent Check boxes",
               "fullTitle": "Checkbox Functionality Handliing diffenent Check boxes",
               "timedOut": null,
-              "duration": 1898,
+              "duration": 1866,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -109,20 +109,20 @@
               "context": null,
               "code": "// 1. 先進到測試頁\ncy.visit(\"https://demos.jquerymobile.com/1.4.5/checkboxradio-checkbox/\");\n// 2. 抓到核取方塊的元素，先斷言該元素是\"未勾選\"的狀態，然後點擊它，再斷言它是\"已勾選\"的狀態\ncy.get(\"#checkbox-v-2a\").should(\"not.be.checked\").check({\n  force: true\n}).should(\"be.checked\");\n// 3. 抓到核取方塊的元素，先斷言該元素是\"未勾選\"的狀態，然後點擊它，再斷言它是\"已勾選\"的狀態\ncy.get(\"#checkbox-v-2c\").should(\"not.be.checked\").check({\n  force: true\n}).should(\"be.checked\");",
               "err": {},
-              "uuid": "03cfc5ed-21cf-4fdf-a95f-dbea3d90be2e",
-              "parentUUID": "11491ccc-0cd3-4dec-b10c-f08cf9505ee1",
+              "uuid": "df76869d-de7c-4024-bcba-cc86dee66e18",
+              "parentUUID": "0ed6afaa-d932-4295-9d50-0d62f8a638f1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "03cfc5ed-21cf-4fdf-a95f-dbea3d90be2e"
+            "df76869d-de7c-4024-bcba-cc86dee66e18"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1898,
+          "duration": 1866,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -138,7 +138,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "3e4ffe5f-765e-494d-a911-2dc3c8bf7e75",
+      "uuid": "61b7b281-5624-4bfd-94e0-7e52350147bf",
       "title": "",
       "fullFile": "cypress\\e2e\\smoke\\Tc01_FirstScript.spec.js",
       "file": "cypress\\e2e\\smoke\\Tc01_FirstScript.spec.js",
@@ -147,7 +147,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d719aa82-0d25-464e-834b-fc3129933827",
+          "uuid": "a4dbf5ac-62c4-4e06-bbbe-a0896e4e0c0e",
           "title": "Login Functionality",
           "fullFile": "",
           "file": "",
@@ -158,21 +158,21 @@
               "title": "Login test using Conduit",
               "fullTitle": "Login Functionality Login test using Conduit",
               "timedOut": null,
-              "duration": 3505,
+              "duration": 3457,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
-              "context": null,
+              "context": "\"asset/Tc01_FirstScript.spec.js/Login Functionality -- Login test using Conduit (failed).png\"",
               "code": "// 1. 先進到測試頁\ncy.visit(\"/\");\n// cy.contains(\"a\", \"Sign in\").click();\n// 2. 抓取 Login 按鈕元素，並點擊\ncy.get('a[href=\"#login\"]').click();\n// 3. 抓取 Email 輸入框元素，並輸入測試 email\ncy.get('input[placeholder=\"Email\"]').type(\"jcjchuhu2@gmail.com\");\n// 4. 抓取 Passwrod 輸入框元素，並輸入測試 password\ncy.get('input[placeholder=\"Password\"]').type(\"abcd1234\");\n// 5. 抓取 提交 按鈕，並點擊\ncy.get('button[type=\"submit\"]').click();\n// 6. 抓取設定 按鈕\n// 6-1. 斷言頁面上有包含 \"Settings\" 文字\n// 6-2. 點擊 Settings 按鈕\n// 6-3. 抓取頁面下方的 logout 按鈕元素，並點擊\n// 6-4. 抓取 login 元素，並斷言確認頁面包含文字 \"Sign in\"\ncy.get('a[href=\"#settings\"]').then(setting => {\n  cy.wrap(setting).should(\"contain\", \"Settings\");\n  cy.wrap(setting).click();\n  cy.get('button[class=\"btn btn-outline-danger\"]').click();\n  cy.get('a[href=\"#login\"]').should(\"contain\", \"Sign in\");\n});",
               "err": {
                 "message": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'body')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
                 "estack": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'body')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <unknown> (https://react-redux.realworld.io/main.js:28244:44)",
                 "diff": null
               },
-              "uuid": "08253767-7f4c-45c2-85e8-64cea2c0198d",
-              "parentUUID": "d719aa82-0d25-464e-834b-fc3129933827",
+              "uuid": "d5ae2ee3-d854-4521-9b7c-2d3604a25b32",
+              "parentUUID": "a4dbf5ac-62c4-4e06-bbbe-a0896e4e0c0e",
               "isHook": false,
               "skipped": false
             }
@@ -180,11 +180,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "08253767-7f4c-45c2-85e8-64cea2c0198d"
+            "d5ae2ee3-d854-4521-9b7c-2d3604a25b32"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 3505,
+          "duration": 3457,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

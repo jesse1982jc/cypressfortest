@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2024-10-14T07:08:54.550Z",
-    "end": "2024-10-14T07:09:02.910Z",
-    "duration": 8360,
+    "start": "2024-10-14T07:51:47.866Z",
+    "end": "2024-10-14T07:51:56.169Z",
+    "duration": 8303,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3f050272-60ef-4c9a-9354-9ca39dc95297",
+      "uuid": "e3e8b16d-975e-4c4d-853e-25bf4a254ca5",
       "title": "",
       "fullFile": "cypress\\e2e\\smoke\\Tc02_RadioButton.spec.js",
       "file": "cypress\\e2e\\smoke\\Tc02_RadioButton.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d731278f-04a9-49c8-b534-d01b1a130955",
+          "uuid": "7da45063-a480-41ac-ba48-3d6e875e5a17",
           "title": "Radio Button Functionality",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "Handliing diffenent radio button",
               "fullTitle": "Radio Button Functionality Handliing diffenent radio button",
               "timedOut": null,
-              "duration": 6041,
+              "duration": 5981,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
-              "context": null,
+              "context": "\"asset/Tc02_RadioButton.spec.js/Radio Button Functionality -- Handliing diffenent radio button (failed).png\"",
               "code": "// 1. 先進到測試頁\ncy.visit(\"https://demos.jquerymobile.com/1.4.5/checkboxradio-radio/\");\n// Basic Radio Button\n// 先找到該元素，斷言該元素一開始是\"未點擊\"狀態，斷言成功的話，再點擊它\ncy.get(\"#radio-choice-0abs\").should(\"not.be.checked\").click({\n  force: true\n});\ncy.get(\"#radio-choice-0b\").should(\"not.be.checked\").click({\n  force: true\n});\n// Modern Radio Button\n// 先找到該元素，斷言該元素一開始是\"未點擊\"狀態，斷言成功的話，再點擊它\ncy.get(\"#radio-choice-h-2b\").should(\"not.be.checked\").click({\n  force: true\n});\ncy.get(\"#radio-choice-h-2c\").should(\"not.be.checked\").click({\n  force: true\n});",
               "err": {
                 "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#radio-choice-0abs`, but never found it.",
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#radio-choice-0abs`, but never found it.\n    at Context.eval (webpack://cypressfortest/./cypress/e2e/smoke/Tc02_RadioButton.spec.js:11:7)",
                 "diff": null
               },
-              "uuid": "e55f675d-210e-451e-ab89-902463fec545",
-              "parentUUID": "d731278f-04a9-49c8-b534-d01b1a130955",
+              "uuid": "be74ac3f-4464-44b5-86b3-1f5c316bc0ef",
+              "parentUUID": "7da45063-a480-41ac-ba48-3d6e875e5a17",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "e55f675d-210e-451e-ab89-902463fec545"
+            "be74ac3f-4464-44b5-86b3-1f5c316bc0ef"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 6041,
+          "duration": 5981,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -3,6 +3,8 @@ const { defineConfig } = require("cypress");
 // const plugins = require("./cypress/plugins");
 
 module.exports = defineConfig({
+  // 截圖存放的資料夾
+  screenshotsFolder: "cypress/reports/mochareports/assets",
   // cypress cloud 的 唯一 id
   projectId: "e7pfkt",
   reporter: "cypress-multi-reporters",

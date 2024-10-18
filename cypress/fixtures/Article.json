@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "slug": "Demo-Post",
+      "title": "Demo Mock Cypress",
+      "description": "Demo-Post Practice for Udemy Course",
+      "body": "This is a Demo post for testing",
+      "tagList": ["qa career", "Bondar Academy", "QA Skills", "Value-Focused"],
+      "createdAt": "2024-01-27T21:52:32.682Z",
+      "updatedAt": "2024-01-27T21:52:32.682Z",
+      "favorited": false,
+      "favoritesCount": 345,
+      "author": {
+        "username": "Jesse",
+        "bio": null,
+        "image": "https://storage.googleapis.com/bondar-academy-visuals/Android.png",
+        "following": false
+      }
+    }
+  ],
+  "articlesCount": 1
+}
